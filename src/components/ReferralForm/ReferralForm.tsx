@@ -96,9 +96,7 @@ export default function ReferralForm() {
         setYourEmail("");
         setShowConfirmation(true); // Show confirmation popup
       } else {
-
-        alert("response OK failed with result from api/referral" ); // DEBUG
-
+        alert("response OK failed with result from api/referral"); // DEBUG
         setErrorMessage("Failed to submit the form. Please try again!");
       }
     } catch (error) {
