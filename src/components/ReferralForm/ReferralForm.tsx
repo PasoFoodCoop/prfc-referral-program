@@ -96,6 +96,7 @@ export default function ReferralForm() {
         setYourEmail("");
         setShowConfirmation(true); // Show confirmation popup
       } else {
+        alert(referralData); //DEBUG
         setErrorMessage("Failed to submit the form. Please try again!");
       }
     } catch (error) {
