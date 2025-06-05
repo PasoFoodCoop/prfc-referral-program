@@ -88,7 +88,7 @@ async function sendEmail(prospects: any, ref: any, member: any) {
   for (const prospect of prospects) {
     // console.log(prospect.prospect_email);
     const mail = {
-      from: Paso Food Co-op Mail <process.env.FROM_EMAIL>,
+      from: process.env.FROM_EMAIL,
       to: prospect.prospect_email,
       subject: "You've Been Invited!",
       html: `<div style="width: 100%; max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
