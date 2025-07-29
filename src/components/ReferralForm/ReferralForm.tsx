@@ -93,7 +93,7 @@ export default function ReferralForm() {
       if (response.ok) {
         console.log("Referral created successfully");
         setProspects([{ email: "", fullName: "" }]);
-        //setYourEmail(""); //do not reset
+        // setYourEmail(""); do not reset
         setShowConfirmation(true); // Show confirmation popup
       } else {
         alert("response OK failed with result from api/referral"); // DEBUG
