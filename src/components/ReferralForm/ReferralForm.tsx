@@ -187,7 +187,7 @@ export default function ReferralForm() {
           ))}
         </div>
         <button type="submit" className={styles.button}>
-          Invite
+          Invite (Click once, be patient!)
         </button>
         {errorMessage && <p className={styles.error}>{errorMessage}</p>}
         {prospects.length < 5 ? (
