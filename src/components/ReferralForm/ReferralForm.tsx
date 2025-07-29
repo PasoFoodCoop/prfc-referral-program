@@ -95,7 +95,6 @@ export default function ReferralForm() {
         setProspects([{ email: "", fullName: "" }]);
         setYourEmail("");
         setShowConfirmation(true); // Show confirmation popup
-        location.reload();
       } else {
         alert("response OK failed with result from api/referral"); // DEBUG
         setErrorMessage("Failed to submit the form. Please try again!");
@@ -135,7 +134,7 @@ export default function ReferralForm() {
         <div className={styles.confirmationPopup}>
           <div className={styles.confirmationContent}>
             <p>🎉 Referral submitted successfully!</p>
-            <button onClick={() => setShowConfirmation(false)} className={styles.closeButton}>
+            <button onClick={() => setShowConfirmation(false);location.reload(); } className={styles.closeButton}>
               Close
             </button>
           </div>
