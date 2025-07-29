@@ -95,6 +95,7 @@ export default function ReferralForm() {
         setProspects([{ email: "", fullName: "" }]);
         setYourEmail("");
         setShowConfirmation(true); // Show confirmation popup
+        location.reload();
       } else {
         alert("response OK failed with result from api/referral"); // DEBUG
         setErrorMessage("Failed to submit the form. Please try again!");
