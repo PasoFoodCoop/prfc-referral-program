@@ -134,7 +134,7 @@ export default function ReferralForm() {
         <div className={styles.confirmationPopup}>
           <div className={styles.confirmationContent}>
             <p>🎉 Referral submitted successfully!</p>
-            <button onClick={() => setShowConfirmation(false)}  className={styles.closeButton}>
+            <button onClick={() => setShowConfirmation(false)} className={styles.closeButton}>
               Close
             </button>
           </div>
