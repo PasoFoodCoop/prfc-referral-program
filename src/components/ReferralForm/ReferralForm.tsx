@@ -16,7 +16,7 @@ export default function ReferralForm() {
   const [errorMessage, setErrorMessage] = useState("");
 
   // State to manage confirmation of Referral Submission
-  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showConfirmation, setShowConfirmation] = { useState(false); location.reload(); }
 
   useEffect(() => {
     if (!searchParams) return;
@@ -134,7 +134,7 @@ export default function ReferralForm() {
         <div className={styles.confirmationPopup}>
           <div className={styles.confirmationContent}>
             <p>🎉 Referral submitted successfully!</p>
-            <button onClick={() => {setShowConfirmation(false);location.reload();}}  className={styles.closeButton}>
+            <button onClick={() => setShowConfirmation(false)}  className={styles.closeButton}>
               Close
             </button>
           </div>
